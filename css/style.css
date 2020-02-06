@@ -12,6 +12,13 @@ body {
   height: 100vh;
 }
 
+.second-title {
+  text-transform: uppercase;
+  font-size: 54px;
+  text-align: center;
+  color: #ffffff;
+}
+
 @media screen and (max-width: 1200px) {
   .container {
     max-width: 768px;
@@ -24,7 +31,7 @@ body {
   }
 }
 
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 429px) {
   .container {
     max-width: 100%;
   }
@@ -107,12 +114,73 @@ body {
   }
 }
 
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 429px) {
   .headline {
     font-size: 40px;
   }
   .underhead {
     font-size: 12px;
+  }
+}
+
+.who__section {
+  background: url(../screen/screen2.jpg) no-repeat #000000;
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.who__title {
+  position: relative;
+  margin: 0;
+  padding: 40px 0;
+  text-transform: lowercase;
+  font-weight: 500;
+}
+
+.who__title::after, .who__title::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  height: 2px;
+  width: 100%;
+  background-color: #fff;
+}
+
+.who__title::after {
+  top: 0;
+}
+
+.who__title::before {
+  bottom: 0;
+}
+
+.who__title_upercase {
+  text-transform: uppercase;
+}
+
+@media screen and (max-width: 1200px) {
+  .who__section {
+    background-position-x: center;
+  }
+  .who__title {
+    font-size: 38px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .who__title {
+    font-size: 21px;
+  }
+}
+
+@media screen and (max-width: 429px) {
+  .who__title {
+    font-size: 16px;
   }
 }
 /*# sourceMappingURL=style.css.map */

@@ -1,0 +1,43 @@
+.who
+  &__section
+    background: url(../screen/screen2.jpg) no-repeat #000000
+    background-size: cover
+    display: flex
+    align-items: center
+  &__title
+    position: relative
+    margin: 0
+    padding: 40px 0
+    text-transform: lowercase
+    font-weight: 500
+    &::after,
+    &::before
+      content: ''
+      position: absolute
+      left: 0
+      height: 2px
+      width: 100%
+      background-color: #fff
+    &::after
+      top: 0
+    &::before
+      bottom: 0
+    &_upercase
+      text-transform: uppercase
+
+@media screen and (max-width: 1200px)
+  .who
+    &__section
+      background-position-x: center
+    &__title
+      font-size: 38px
+
+@media screen and (max-width: 768px)
+  .who
+    &__title
+      font-size: 21px
+
+@media screen and (max-width: 429px)
+  .who
+    &__title
+      font-size: 16px
