@@ -19,6 +19,12 @@ body {
   color: #ffffff;
 }
 
+.fixed {
+  position: fixed;
+  top: 0;
+  z-index: -1;
+}
+
 @media screen and (max-width: 1200px) {
   .container {
     max-width: 768px;
@@ -123,7 +129,9 @@ body {
   }
 }
 
-.who__section {
+.who__wrapper {
+  width: 100%;
+  height: 100vh;
   background: url(../screen/screen2.jpg) no-repeat #000000;
   background-size: cover;
   display: -webkit-box;
