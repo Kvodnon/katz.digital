@@ -1,0 +1,40 @@
+.footer
+  background: #000
+  padding: 100px 0 60px
+  &-item
+    color: #ffffff
+    font-size: 23px
+    width: 253px
+  &__item
+    margin: 0
+    &:not(:first-child):not(:last-child)
+      text-align: center
+  &-list
+    display: flex
+    justify-content: space-between
+
+@media screen and (max-width: 1200px)
+  .footer
+    &-item
+      font-size: 20px
+      width: 223px
+@media screen and (max-width: 768px)
+  .footer
+    &-list
+      flex-wrap: wrap
+      justify-content: center
+    &-item
+      font-size: 19px
+      width: 50%
+    &__item
+      margin-bottom: 50px
+@media screen and (max-width: 461px)
+  .footer
+    &-list
+      flex-wrap: nowrap
+      flex-direction: column
+      justify-content: center
+      align-items: center
+    &-item
+      width: 100%
+      text-align: center

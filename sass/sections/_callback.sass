@@ -1,0 +1,61 @@
+.callback
+  &__section
+    background: #000
+    padding: 100px 0
+  &__title
+    margin-bottom: 130px
+  &-input
+    width: 29%
+    font-size: 15px
+    text-transform: uppercase
+    color: rgba(#ffffff, 0.50)
+    background: none
+    border: none
+    border-bottom: 2px solid white
+    padding-bottom: 10px
+    outline: none
+  &-group
+    display: flex
+    justify-content: space-between
+    &-question
+      justify-content: center
+  &-question
+    width: 80%
+  &__question
+    margin-top: 80px
+    margin-bottom: 40px
+  &-button
+    height: 51px
+    padding: 0 60px
+    color: rgba(#ffffff, 0.50)
+    background: none
+    outline: none
+    border: 1px solid white
+    cursor: pointer
+    text-transform: uppercase
+  &__button
+    display: block
+    margin: 40px auto 0
+
+@media screen and (max-width: 768px)
+  .callback
+    &-title
+      font-size: 40px
+@media screen and (max-width: 461px)
+  .callback
+    &__section
+      padding: 50px 0
+    &-title
+      font-size: 26px
+    &__title
+      margin-bottom: 60px
+    &-group
+      flex-direction: column
+    &-input
+      width: 100%
+    &__input
+      margin-bottom: 40px
+    &__question
+      margin-top: 0
+    &__button
+      margin-top: 0
