@@ -14,8 +14,6 @@ function toSecondScreen() {
 
 window.addEventListener('scroll', toSecondScreen);
 
-VanillaTilt.init(document.querySelector(".js-tilt"), {
-  axis: 'X',
-  startX: 25,
-  startY: 250
+VanillaTilt.init(document.querySelectorAll(".js-tilt"), {
+  max: 5
 });
