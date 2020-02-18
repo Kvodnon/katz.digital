@@ -298,8 +298,12 @@ body {
   }
 }
 
-.let__section {
+.let__wrapper {
+  width: 100%;
+  height: 100vh;
   background: url(../screen/screen4.png) no-repeat #8E9ECA;
+  background-size: cover;
+  z-index: -2;
 }
 
 @media screen and (max-width: 1200px) {
@@ -385,8 +389,11 @@ body {
   }
 }
 
-.do__section {
+.do__wrapper {
+  width: 100%;
+  height: 100vh;
   background: url(../screen/screen7.png) no-repeat #BC588B;
+  background-size: cover;
 }
 
 @media screen and (max-width: 1200px) {

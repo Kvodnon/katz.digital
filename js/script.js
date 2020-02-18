@@ -1,19 +1,22 @@
 'use strict';
 
-let whoWrapper = document.querySelector('.who__wrapper'),
-    logoSection = document.querySelector('.logo__section');
+const whoWrapper = document.querySelector('.who__wrapper'),
+    whoSection = document.querySelector('.who__section'),
+    letWrapper = document.querySelector('.let__wrapper'),
+    letSection = document.querySelector('.let__section');
 
 function toSecondScreen() {
-  if (logoSection.offsetHeight < window.scrollY) {
-    // console.log('this.scrollY: ', window.scrollY);
+  if (whoSection.offsetTop < window.scrollY) {
+    whoWrapper.classList.remove('fixed');
+  }
+
+  if (letSection.offsetTop < window.scrollY) {
     window.removeEventListener('scroll', toSecondScreen);
 
-    whoWrapper.classList.remove('fixed');
+    letWrapper.classList.remove('fixed');
   }
 }
 
 window.addEventListener('scroll', toSecondScreen);
 
-VanillaTilt.init(document.querySelectorAll(".js-tilt"), {
-  max: 5
-});
+VanillaTilt.init(document.querySelectorAll(".js-tilt"));
