@@ -208,7 +208,7 @@ body {
 
 .about__content {
   color: #ffffff;
-  font-size: 23px;
+  font-size: 20px;
   line-height: 40px;
   font-weight: 200;
 }
@@ -279,14 +279,10 @@ body {
     height: 100%;
     padding: 30px 15px;
   }
-  .about__content {
-    font-size: 24px;
-  }
 }
 
 @media screen and (max-width: 768px) {
   .about__content {
-    font-size: 22px;
     line-height: 1.5;
   }
   .about__content p + p {
@@ -434,7 +430,7 @@ body {
 
 .cases__title {
   color: #ffffff;
-  font-size: 30px;
+  font-size: 25px;
   font-weight: normal;
 }
 
@@ -625,7 +621,6 @@ body {
 .footer-item {
   color: #ffffff;
   font-size: 23px;
-  width: 253px;
 }
 
 .footer__item {
