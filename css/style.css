@@ -354,10 +354,6 @@ body {
   width: 33%;
 }
 
-.services__item:nth-of-type(n+7) {
-  display: none;
-}
-
 .services__item:nth-of-type(2n) .services__dot {
   background: #000000;
   border-color: #ffffff;
@@ -382,7 +378,20 @@ body {
   text-align: center;
 }
 
+@media screen and (min-width: 769px) {
+  .services__item:nth-of-type(n+7) {
+    display: none;
+  }
+}
+
 @media screen and (max-width: 768px) {
+  .services__wrapper {
+    padding: 50px 0 0;
+    height: 100%;
+  }
+  .services__section {
+    height: 100%;
+  }
   .services__item {
     width: 50%;
   }
@@ -394,9 +403,6 @@ body {
 }
 
 @media screen and (max-width: 429px) {
-  .services__section {
-    padding: 50px 0 0;
-  }
   .services__item {
     width: 100%;
   }

@@ -14,8 +14,6 @@
     flex-wrap: wrap
   &__item
     width: 33% 
-    &:nth-of-type(n+7)
-      display: none
     &:nth-of-type(2n)
       .services__dot
         background: #000000
@@ -36,8 +34,18 @@
     width: 269px
     text-align: center
 
+@media screen and (min-width: 769px)
+  .services
+    &__item
+      &:nth-of-type(n+7)
+        display: none
 @media screen and (max-width: 768px)
   .services
+    &__wrapper
+      padding: 50px 0 0
+      height: 100%
+    &__section
+      height: 100%
     &__item
       width: 50%
     &__text
@@ -47,8 +55,6 @@
 
 @media screen and (max-width: 429px)
   .services
-    &__section
-      padding: 50px 0 0
     &__item
       width: 100%
     &__text
