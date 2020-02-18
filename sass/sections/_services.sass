@@ -1,12 +1,16 @@
 .services
   &__section
-    padding: 180px 0
+    // padding: 180px 0
     background: #000
+    display: flex
+    align-items: center
   &__wrapper
     display: flex
     flex-wrap: wrap
   &__item
     width: 33% 
+    &:nth-of-type(n+7)
+      display: none
     &:nth-of-type(2n)
       .services__dot
         background: #000000
