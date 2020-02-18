@@ -297,7 +297,7 @@ body {
 .let__wrapper {
   width: 100%;
   height: 100vh;
-  background: url(../screen/screen4.png) no-repeat #8E9ECA;
+  background: url(../screen/screen4.jpg) no-repeat #8E9ECA;
   background-size: cover;
 }
 
@@ -409,7 +409,7 @@ body {
 .do__wrapper {
   width: 100%;
   height: 100vh;
-  background: url(../screen/screen7.png) no-repeat #BC588B;
+  background: url(../screen/screen7.jpg) no-repeat #BC588B;
   background-size: cover;
 }
 
@@ -511,7 +511,7 @@ body {
 }
 
 .contacts__section {
-  background: url(../screen/screen10.png) no-repeat #BC588B;
+  background: url(../screen/screen10.jpg) no-repeat #BC588B;
   background-size: cover;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
