@@ -10,6 +10,8 @@
 
   if (window.screen.width > 768) {
     servicesWrapper.classList.add('fixed');
+
+    VanillaTilt.init(document.querySelectorAll(".js-tilt"));
   }
 
   function toSecondScreen() {
@@ -29,6 +31,4 @@
   }
 
   window.addEventListener('scroll', toSecondScreen);
-
-  VanillaTilt.init(document.querySelectorAll(".js-tilt"));
 })();
