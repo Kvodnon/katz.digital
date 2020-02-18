@@ -286,11 +286,20 @@ body {
   .about__content {
     line-height: 1.5;
   }
+  .about__content br {
+    display: none;
+  }
   .about__content p + p {
     margin-top: 15px;
   }
   .about__logotypes img {
     width: 22%;
+  }
+}
+
+@media screen and (max-width: 429px) {
+  .about__content {
+    font-size: 14px;
   }
 }
 
