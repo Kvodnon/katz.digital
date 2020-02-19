@@ -1,4 +1,6 @@
 .about
+  &__container
+    justify-content: space-between
   &__section
     display: flex
     align-items: center
@@ -44,15 +46,17 @@
 
 @media screen and (max-width: 1200px)
   .about
+    &__content
+      font-size: 3vh
+      line-height: 1.5
     &__section
-      height: 100%
       padding: 30px 15px
   
 
 @media screen and (max-width: 768px)
   .about
     &__content
-      line-height: 1.5
+      font-size: 2.5vh
       br
         display: none
       p
@@ -66,4 +70,4 @@
 @media screen and (max-width: 429px)
   .about
     &__content
-      font-size: 14px
+      font-size: 2.1vh

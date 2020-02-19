@@ -197,6 +197,12 @@ body {
   }
 }
 
+.about__container {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
 .about__section {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -276,15 +282,18 @@ body {
 }
 
 @media screen and (max-width: 1200px) {
+  .about__content {
+    font-size: 3vh;
+    line-height: 1.5;
+  }
   .about__section {
-    height: 100%;
     padding: 30px 15px;
   }
 }
 
 @media screen and (max-width: 768px) {
   .about__content {
-    line-height: 1.5;
+    font-size: 2.5vh;
   }
   .about__content br {
     display: none;
@@ -299,7 +308,7 @@ body {
 
 @media screen and (max-width: 429px) {
   .about__content {
-    font-size: 14px;
+    font-size: 2.1vh;
   }
 }
 
