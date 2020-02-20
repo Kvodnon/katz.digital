@@ -142,6 +142,7 @@ body {
 
 .logo__section {
   background: #000;
+  max-height: calc(100vh - 120px);
 }
 
 .logo__headline {
@@ -573,6 +574,8 @@ body {
 .callback-container {
   margin-top: auto;
   width: -webkit-fill-available;
+  width: -moz-available;
+  width: fill-available;
 }
 
 .callback__section {
