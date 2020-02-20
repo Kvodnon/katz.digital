@@ -12,6 +12,8 @@
   &-list
     display: flex
     justify-content: space-between
+  &__phone
+    display: block
 
 @media screen and (max-width: 1200px)
   .footer
@@ -28,13 +30,22 @@
       width: 50%
     &__item
       margin-bottom: 50px
-@media screen and (max-width: 461px)
+    &-mail,
+    &-phone
+      font-size: 19px
+@media screen and (max-width: 768px)
   .footer
+    padding-bottom: 10px
     &-list
-      flex-wrap: nowrap
-      flex-direction: column
       justify-content: center
       align-items: center
     &-item
-      width: 100%
+      font-size: 12px
       text-align: center
+    &__item
+      margin-bottom: 20px
+      &:last-of-type
+        margin-bottom: 0
+    &-mail,
+    &-phone
+      font-size: 12px
