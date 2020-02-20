@@ -82,6 +82,10 @@ body {
     max-width: 768px;
     padding: 0 15px;
   }
+  .phone,
+  .mail {
+    font-size: 20px;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -251,50 +255,40 @@ body {
       align-self: center;
 }
 
-@media screen and (min-width: 1571px) {
+@media screen and (min-width: 1201px) {
   .about__container {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    max-width: 1543px;
   }
   .about__content {
-    width: 57%;
+    width: 63%;
   }
   .about__logotypes {
-    width: 30%;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    width: 37%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -webkit-box-align: end;
-        -ms-flex-align: end;
-            align-items: flex-end;
-  }
-}
-
-@media screen and (max-width: 1570px) {
-  .about__logotypes {
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    padding-top: 30px;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: start;
-  }
-  .about__content p + p {
-    margin-top: 30px;
   }
 }
 
 @media screen and (max-width: 1200px) {
+  .about__logotypes {
+    padding-top: 30px;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+  }
   .about__content {
     font-size: 2.3vh;
     line-height: 1.5;
+  }
+  .about__content p + p {
+    margin-top: 30px;
   }
   .about__section {
     padding: 30px 15px;
@@ -776,6 +770,15 @@ body {
   }
   .footer-mail, .footer-phone {
     font-size: 12px;
+  }
+}
+
+@media screen and (min-height: 329px) and (max-width: 768px) {
+  .footer-list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 }
 /*# sourceMappingURL=style.css.map */

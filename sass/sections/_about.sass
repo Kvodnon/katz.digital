@@ -21,35 +21,28 @@
       &:nth-of-type(2)
         align-self: center
 
-@media screen and (min-width: 1571px)
+@media screen and (min-width: 1201px)
   .about
     &__container
       display: flex
-      max-width: 1543px
     &__content
-      width: 57%
+      width: 63%
     &__logotypes
-      width: 30%
-      justify-content: space-between
+      width: 37%
+      justify-content: center
       flex-direction: column
-      align-items: flex-end
-
-@media screen and (max-width: 1570px)
-  .about
-    &__logotypes
-      justify-content: space-between
-      padding-top: 30px
-      align-items: start
-    &__content
-      p
-        &+p
-          margin-top: 30px
 
 @media screen and (max-width: 1200px)
   .about
+    &__logotypes
+      padding-top: 30px
+      align-items: flex-end
     &__content
       font-size: 2.3vh
       line-height: 1.5
+      p
+        &+p
+          margin-top: 30px
     &__section
       padding: 30px 15px
   
